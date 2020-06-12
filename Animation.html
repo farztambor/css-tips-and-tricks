@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation by bossROD</title>
+</head>
+<style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .main {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .main .box {
+        background: red;
+        height: 100px;
+        width: 100px;
+        animation: boxAnimation 2s ease infinite alternate;
+    }
+
+    @keyframes boxAnimation {
+        0% {
+            background: red;
+            height: 100px;
+            width: 100px;
+        }
+        50% {
+            background: green;
+            height: 200px;
+            width: 200px;
+        }
+        100% {
+            background: yellow;
+            height: 300px;
+            width: 300px;
+        }
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
